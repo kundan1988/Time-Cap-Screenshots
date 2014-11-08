@@ -1,0 +1,6 @@
+C:\Work\TimeCap.root\Components\signature-pad-1.3.3\samples\Sample.iOS\bin\iPhone\Debug\Sample.exe
+C:\Work\TimeCap.root\Components\signature-pad-1.3.3\samples\Sample.iOS\bin\iPhone\Debug\Sample.pdb
+C:\Work\TimeCap.root\Components\signature-pad-1.3.3\samples\Sample.iOS\bin\iPhone\Debug\SignaturePad.iOS.dll
+C:\Work\TimeCap.root\Components\signature-pad-1.3.3\samples\Sample.iOS\obj\iPhone\Debug\Sample.csprojResolveAssemblyReference.cache
+C:\Work\TimeCap.root\Components\signature-pad-1.3.3\samples\Sample.iOS\obj\iPhone\Debug\Sample.exe
+C:\Work\TimeCap.root\Components\signature-pad-1.3.3\samples\Sample.iOS\obj\iPhone\Debug\Sample.pdb

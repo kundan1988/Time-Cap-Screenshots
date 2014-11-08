@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{8ABB3EAB-7D52-45B6-9F7C-7001171DA2A4}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TimeCap.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>TimeCap</AssemblyName>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchSdkVersion>7.1</MtouchSdkVersion>
+    <MtouchExtraArgs>
+    </MtouchExtraArgs>
+    <MtouchArch>Default, ARMv7</MtouchArch>
+    <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchProfiling>False</MtouchProfiling>
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchEnableGenericValueTypeSharing>True</MtouchEnableGenericValueTypeSharing>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchUseSGen>False</MtouchUseSGen>
+    <MtouchUseRefCounting>False</MtouchUseRefCounting>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>True</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchExtraArgs>
+    </MtouchExtraArgs>
+    <MtouchArch>Default, ARMv7</MtouchArch>
+    <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
+    <MtouchI18n>
+    </MtouchI18n>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <BuildIpa>True</BuildIpa>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Code\AllocEmployeeTableitem.cs" />
+    <Compile Include="Code\AllocEmployeeTableSource.cs" />
+    <Compile Include="Code\IsupportAllocEmployee.cs" />
+    <Compile Include="Code\TaskListCheckmark.cs" />
+    <Compile Include="Controllers\AllocationViewcontroller.cs" />
+    <Compile Include="Controllers\AllocationViewcontroller.designer.cs">
+      <DependentUpon>AllocationViewcontroller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\ActivityListTableItem.cs" />
+    <Compile Include="Code\ActivityListTablesource.cs" />
+    <Compile Include="Code\AllocEmploTableItem.cs" />
+    <Compile Include="Code\AllocEmpTableItem.cs" />
+    <Compile Include="Code\AllocEmpTableSource.cs" />
+    <Compile Include="Code\CalendarDayView.cs" />
+    <Compile Include="Code\ElementTableItem.cs" />
+    <Compile Include="Code\ElementTableSource.cs" />
+    <Compile Include="Code\EmpPhotoTableitem.cs" />
+    <Compile Include="Code\EmpPhotoTablesource.cs" />
+    <Compile Include="Code\EquipmentListTableItem.cs" />
+    <Compile Include="Code\EquipmentListTableSource.cs" />
+    <Compile Include="Code\FMCalendar.cs" />
+    <Compile Include="Code\IsupportActivity.cs" />
+    <Compile Include="Code\ISupportElement.cs" />
+    <Compile Include="Code\ISupportEmpphotosorce.cs" />
+    <Compile Include="Code\IsupportTimekeeper.cs" />
+    <Compile Include="Code\MonthGridView.cs" />
+    <Compile Include="Code\NavItem.cs" />
+    <Compile Include="Code\NavItemGroup.cs" />
+    <Compile Include="Code\NavItemTableSource.cs" />
+    <Compile Include="Code\TableItem.cs" />
+    <Compile Include="Code\TableItemGroup.cs" />
+    <Compile Include="Code\TableSource.cs" />
+    <Compile Include="Code\TimecapCalendar.cs" />
+    <Compile Include="Code\TimekeeperTablItem.cs" />
+    <Compile Include="Code\TimekeeperTablSource.cs" />
+    <Compile Include="Controllers\ActivityListviewcontroller.cs" />
+    <Compile Include="Controllers\ActivityListviewcontroller.designer.cs">
+      <DependentUpon>ActivityListviewcontroller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Isupportsearch.cs" />
+    <Compile Include="Code\ProjectListTableItm.cs" />
+    <Compile Include="Code\ProjectsearchTableItem.cs" />
+    <Compile Include="Code\ProjectsearchTablesource.cs" />
+    <Compile Include="Controllers\AllocEquipmentListTableViewCell.cs" />
+    <Compile Include="Controllers\AllocEquipmentListTableViewCell.designer.cs">
+      <DependentUpon>AllocEquipmentListTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AllocEquipmentListViewController.cs" />
+    <Compile Include="Controllers\AllocEquipmentListViewController.designer.cs">
+      <DependentUpon>AllocEquipmentListViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Format.cs" />
+    <Compile Include="Code\ICustomSerializer.cs" />
+    <Compile Include="Code\IJsonSerializer.cs" />
+    <Compile Include="Code\IRestClient.cs" />
+    <Compile Include="Code\ISupportTableSource.cs" />
+    <Compile Include="Code\ITextSerializer.cs" />
+    <Compile Include="Code\JsonClient.cs" />
+    <Compile Include="Code\LaborListTableItem.cs" />
+    <Compile Include="Code\LaborListTableSource.cs" />
+    <Compile Include="Code\LoadingOverlay.cs" />
+    <Compile Include="Code\ProjectListTableSource.cs" />
+    <Compile Include="Code\ServiceResponse.cs" />
+    <Compile Include="Controllers\AllocationsActualViewController.cs" />
+    <Compile Include="Controllers\AllocationsActualViewController.designer.cs">
+      <DependentUpon>AllocationsActualViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\DailyLogDetailviewcontroller.cs" />
+    <Compile Include="Controllers\DailyLogDetailviewcontroller.designer.cs">
+      <DependentUpon>DailyLogDetailviewcontroller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\EmployeeListviewcontroller.cs" />
+    <Compile Include="Controllers\EmployeeListviewcontroller.designer.cs">
+      <DependentUpon>EmployeeListviewcontroller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\EquipmentListSignoutViewController.cs" />
+    <Compile Include="Controllers\EquipmentListSignoutViewController.designer.cs">
+      <DependentUpon>EquipmentListSignoutViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\EmployeeListSignoutViewController.cs" />
+    <Compile Include="Controllers\EmployeeListSignoutViewController.designer.cs">
+      <DependentUpon>EmployeeListSignoutViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\EmployeeSignatureView.cs" />
+    <Compile Include="Controllers\EmployeeSignatureView.designer.cs">
+      <DependentUpon>EmployeeSignatureView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\EmployeeSignatureViewController.cs" />
+    <Compile Include="Controllers\EmployeeSignatureViewController.designer.cs">
+      <DependentUpon>EmployeeSignatureViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\EmployeeSignoutController.cs" />
+    <Compile Include="Controllers\EmployeeSignoutController.designer.cs">
+      <DependentUpon>EmployeeSignoutController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\EquipmentListSignoutTableViewCell.cs" />
+    <Compile Include="Code\EquipmentListSignoutTableViewCell.designer.cs">
+      <DependentUpon>EquipmentListSignoutTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\Empmasterviewcontroller.cs" />
+    <Compile Include="Controllers\Empmasterviewcontroller.designer.cs">
+      <DependentUpon>Empmasterviewcontroller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\EmployeeListSearchviewcontroller.cs" />
+    <Compile Include="Controllers\EmployeeListSearchviewcontroller.designer.cs">
+      <DependentUpon>EmployeeListSearchviewcontroller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\Equipmentsignoutviewcontroll.cs" />
+    <Compile Include="Controllers\Equipmentsignoutviewcontroll.designer.cs">
+      <DependentUpon>Equipmentsignoutviewcontroll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ProjectListViewController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\ProjectListViewController.designer.cs">
+      <DependentUpon>ProjectListViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\SearchItemViewController.cs" />
+    <Compile Include="Controllers\SearchItemViewController.designer.cs">
+      <DependentUpon>SearchItemViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\TimecapSettingviewcontroll.cs" />
+    <Compile Include="Controllers\TimecapSettingviewcontroll.designer.cs">
+      <DependentUpon>TimecapSettingviewcontroll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cosmatic\Theme.cs" />
+    <Compile Include="Controllers\Elementlistviewcontroller.cs" />
+    <Compile Include="Controllers\Elementlistviewcontroller.designer.cs">
+      <DependentUpon>Elementlistviewcontroller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\EmployeeMasterViewcontroller.cs" />
+    <Compile Include="Controllers\EmployeeMasterViewcontroller.designer.cs">
+      <DependentUpon>EmployeeMasterViewcontroller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\EquipmentMasterViewcontroller.cs" />
+    <Compile Include="Controllers\EquipmentMasterViewcontroller.designer.cs">
+      <DependentUpon>EquipmentMasterViewcontroller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="Controllers\AppDelegate.cs" />
+    <Compile Include="Code\ProjectListTableItem.cs" />
+    <Compile Include="Code\ProjectListTableItem.designer.cs">
+      <DependentUpon>ProjectListTableItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\TaskCaptureView.cs" />
+    <Compile Include="Controllers\TaskCaptureView.designer.cs">
+      <DependentUpon>TaskCaptureView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\TaskCaptureViewController.cs" />
+    <Compile Include="Controllers\TaskCaptureViewController.designer.cs">
+      <DependentUpon>TaskCaptureViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AbsenceListDTO.cs" />
+    <Compile Include="Models\Activity.cs" />
+    <Compile Include="Models\ActivityListDTO.cs" />
+    <Compile Include="Models\AllocatedEquipDTO.cs" />
+    <Compile Include="Models\AllocatedLaborDTO.cs" />
+    <Compile Include="Models\AllocEmployeePhoto.cs" />
+    <Compile Include="Models\Datamember.cs" />
+    <Compile Include="Models\ElementSearch.cs" />
+    <Compile Include="Models\EmployeeMasterDTO.cs" />
+    <Compile Include="Models\EmployeePhotoDTO.cs" />
+    <Compile Include="Models\Empphotodata.cs" />
+    <Compile Include="Models\EquipmentMasterDTO.cs" />
+    <Compile Include="Models\EquipmentSignoutDTO.cs" />
+    <Compile Include="Models\LaborSignatureDTO.cs" />
+    <Compile Include="Models\LabourListDTO.cs" />
+    <Compile Include="Models\Projecctsearch.cs" />
+    <Compile Include="Models\SearchItem.cs" />
+    <Compile Include="Controllers\Searchemployeeviewcontroller.cs" />
+    <Compile Include="Controllers\Searchemployeeviewcontroller.designer.cs">
+      <DependentUpon>Searchemployeeviewcontroller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\Timekeeperlistviewcontroller.cs" />
+    <Compile Include="Controllers\Timekeeperlistviewcontroller.designer.cs">
+      <DependentUpon>Timekeeperlistviewcontroller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\Projectsearchviewcontroller.cs" />
+    <Compile Include="Controllers\Projectsearchviewcontroller.designer.cs">
+      <DependentUpon>Projectsearchviewcontroller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\TimeKeeperlist\Timekeeperimagelistcontroller.cs" />
+    <Compile Include="Controllers\TimeKeeperlist\Timekeeperimagelistcontroller.designer.cs">
+      <DependentUpon>Timekeeperimagelistcontroller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TaskListDTO.cs" />
+    <Compile Include="Models\TimekeeperData.cs" />
+    <Compile Include="Models\TimekeeperListDTO.cs" />
+    <Compile Include="Orm\SqliteNet.cs" />
+    <Compile Include="Orm\Stock.cs" />
+    <Compile Include="Orm\StockDatabase.cs" />
+    <Compile Include="TimeCapServices.cs" />
+    <Compile Include="XibFree\AutoSize.cs" />
+    <Compile Include="XibFree\Extensions.cs" />
+    <Compile Include="XibFree\FrameLayout.cs" />
+    <Compile Include="XibFree\Gravity.cs" />
+    <Compile Include="XibFree\LayoutParameters.cs" />
+    <Compile Include="XibFree\LinearLayout.cs" />
+    <Compile Include="XibFree\NativeView.cs" />
+    <Compile Include="XibFree\Orientation.cs" />
+    <Compile Include="XibFree\PublicExtensions.cs" />
+    <Compile Include="XibFree\UILayoutHost.cs" />
+    <Compile Include="XibFree\UILayoutHostScrollable.cs" />
+    <Compile Include="XibFree\View.cs" />
+    <Compile Include="XibFree\ViewGroup.cs" />
+    <Compile Include="XibFree\Visibility.cs" />
+    <None Include="Info.plist" />
+    <Compile Include="Models\LaborListDTO.cs" />
+    <Compile Include="Models\LaborSignoutDTO.cs" />
+    <Compile Include="Models\Project.cs" />
+    <Compile Include="Models\ProjectEmployeeDTO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controllers\IGCalendarViewXamarinViewController.cs" />
+    <Compile Include="Controllers\IGCalendarViewXamarinViewController.designer.cs">
+      <DependentUpon>IGCalendarViewXamarinViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AllocEmployeeListViewController.cs" />
+    <Compile Include="Controllers\AllocEmployeeListViewController.designer.cs">
+      <DependentUpon>AllocEmployeeListViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AllocEmployee.cs" />
+    <Compile Include="Controllers\AllocationLocationviewcontroller.cs" />
+    <Compile Include="Controllers\AllocationLocationviewcontroller.designer.cs">
+      <DependentUpon>AllocationLocationviewcontroller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AllocQuantityviewcontroller.cs" />
+    <Compile Include="Controllers\AllocQuantityviewcontroller.designer.cs">
+      <DependentUpon>AllocQuantityviewcontroller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\IRemove.cs" />
+    <Compile Include="Controllers\MapViewController.cs" />
+    <Compile Include="Controllers\TimecapMapViewController.cs" />
+    <Compile Include="Controllers\TimecapMapViewController.designer.cs">
+      <DependentUpon>TimecapMapViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\HomeViewController.designer.cs">
+      <DependentUpon>HomeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\HomeViewController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\gear_32xSM.png" />
+    <BundleResource Include="Resources\field.jpg" />
+    <BundleResource Include="Resources\images\Equipment\equip%402x.png" />
+    <BundleResource Include="Resources\images\leftArrow.png" />
+    <BundleResource Include="Resources\images\rightArrow.png" />
+    <BundleResource Include="Resources\images\topbar.png" />
+    <BundleResource Include="Resources\images\datecell.png" />
+    <BundleResource Include="Resources\images\today.png" />
+    <BundleResource Include="Resources\images\leftArrow%402x.png" />
+    <BundleResource Include="Resources\images\rightArrow%402x.png" />
+    <BundleResource Include="Resources\images\today%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ModernHttpClient">
+      <HintPath>..\Components\modernhttpclient-2.0.1\lib\ios\ModernHttpClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Components\json.net-4.5.11\lib\ios\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SignaturePad.iOS">
+      <HintPath>..\Components\signature-pad-1.3.3\lib\ios\SignaturePad.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Simple.OData.Client.Core">
+      <HintPath>..\Components\Simple.OData.Client-3.0\lib\ios\Simple.OData.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Simple.OData.Client.Dynamic">
+      <HintPath>..\Components\Simple.OData.Client-3.0\lib\ios\Simple.OData.Client.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Json" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.Serialization" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\1404070032_clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="json.net">
+      <Version>4.5.11.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="modernhttpclient">
+      <Version>2.1.2</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="signature-pad">
+      <Version>1.3.4</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="Simple.OData.Client">
+      <Version>3.2</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="sqlcipher-for-xamarin-ios">
+      <Version>3.2.0.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logo-galaxy-black-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Code\Timekeeper\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="MainStoryboard.storyboard">
+      <SubType>Designer</SubType>
+    </InterfaceDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ApplicationBar.Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\CalendarPreviousMonth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\CalendarPreviousMonth%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\CalendarRow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\CalendarRow%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\CalendarRowBottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\CalendarRowBottom%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\CalendarSelectedDate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\CalendarSelectedDate%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\CalendarTodaysDate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\CalendarTodaysDate%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TimeCap.Service\TimeCap.Service.csproj">
+      <Project>{059bca84-1229-4168-b008-783411cf8ef1}</Project>
+      <Name>TimeCap.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\Employee\Labor%402xx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\TimeCapLogo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+</Project>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<component format="1" id="Simple.OData.Client">
+  <name>Simple OData Client</name>
+  <publisher>Vagif Abilov</publisher>
+  <publisher-url>https://github.com/object/Simple.OData.Client</publisher-url>
+  <version>3.2</version>
+  <summary>Cross-platform library to communicate with OData services.</summary>
+  <samples>
+    <sample id="NuGetFinder.iOS">
+      <name>iOS Sample.</name>
+      <summary>NuGet Finder.</summary>
+    </sample>
+    <sample id="NuGetFinder.Android">
+      <name>Android Sample.</name>
+      <summary>NuGet Finder.</summary>
+    </sample>
+    <sample id="NuGetFinder.WP8">
+      <name>Windows Phone Sample.</name>
+      <summary>NuGet Finder.</summary>
+    </sample>
+  </samples>
+</component>
